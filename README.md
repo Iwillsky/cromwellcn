@@ -4,11 +4,17 @@ Genomic Cromwell-on-aws for AWS China Region
 # Repo-link
 * CloudFormation Template link: https://awshcls.s3.cn-northwest-1.amazonaws.com.cn/cromwellcn/templates/cromwell-aio.template.yaml
 * Simple Test Command:
+
 wget https://awshcls.s3.cn-northwest-1.amazonaws.com.cn/cromwellcn/scripts/simple-hello.wdl
+
 curl -X POST "http://localhost:8000/api/workflows/v1" -H "accept: application/json" -F "workflowSource=@simple-hello.wdl"
+
 * GATK Test Command:
+
 wget https://awshcls.s3.cn-northwest-1.amazonaws.com.cn/cromwellcn/scripts/HaplotypeCaller.aws.wdl
+
 wget https://awshcls.s3.cn-northwest-1.amazonaws.com.cn/cromwellcn/scripts/HaplotypeCaller.aws.json
+
 curl -X POST "http://localhost:8000/api/workflows/v1" \
     -H  "accept: application/json" \
     -F "workflowSource=@HaplotypeCaller.aws.wdl" \
