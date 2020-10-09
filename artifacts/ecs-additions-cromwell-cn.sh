@@ -123,11 +123,11 @@ docker image tag "elerch/amazon-ecs-agent:latest" "amazon/amazon-ecs-agent:lates
 wget https://awshcls.s3.cn-northwest-1.amazonaws.com.cn/cromwellcn/images/alinux.tar
 docker load -i alinux.tar
 
-wget https://awshcls.s3.cn-northwest-1.amazonaws.com.cn/cromwellcn/images/ubuntu.tar
-docker load -i ubuntu.tar
+#wget https://awshcls.s3.cn-northwest-1.amazonaws.com.cn/cromwellcn/images/ubuntu.tar
+#docker load -i ubuntu.tar
 
-wget https://awshcls.s3.cn-northwest-1.amazonaws.com.cn/cromwellcn/images/broadgatk4.tar
-docker load -i broadgatk4.tar
+#wget https://awshcls.s3.cn-northwest-1.amazonaws.com.cn/cromwellcn/images/broadgatk4.tar
+#docker load -i broadgatk4.tar
 
 # you can also expand to load more *.tar resources to cut down the ready time in China Region
 # ...
