@@ -251,7 +251,7 @@ Resources:
               content: !Sub
               - |
                 #!/bin/bash
-                curl -LO "https://awshcls.s3.cn-northwest-1.amazonaws.com.cn/cromwellcn/images/cromwell-47cn.jar"
+                curl -LO "https://awshcls.s3.cn-northwest-1.amazonaws.com.cn/cromwellcn/images/cromwell-53.1.jar"
                 ln -s $(find . | grep "cromwell.*\.jar") cromwell.jar
               - CromwellVersionPath:
                   Fn::If:
